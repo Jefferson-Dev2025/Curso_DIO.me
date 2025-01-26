@@ -1,0 +1,53 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+header {
+    width: 100vw;
+    height: 50px;
+    border: solid red;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: yellowgreen;
+    border: solid blue;
+}
+
+
+.content {
+    width: 68%;
+    height: 70%;
+    background-color: violet;
+    border: solid gold;
+    border-radius: 45px;
+
+}
+
+.sidebar {
+    width: 30%;
+    height: 100vh;
+    background-color: violet;
+    border: solid;
+}
+
+.coments {
+    width: 100px;
+    height: 100px;
+    background-color:brown;
+    border: solid;
+    display: flex;
+    align-self: flex-end;
+}
+
+.video {
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+    margin: 5px;
+}

@@ -1,18 +1,19 @@
-*{
-    margin: 0;
+* {
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ---------- Banner ---------- */
 .banner {
     background-image: url(assets/imagens/banner.png);
 }
 
 .banner-content {
     background-image: linear-gradient(rgba(0, 0, 0, 0.664), rgba(49, 169, 221, 0.425), rgba(0, 0, 0, 0.842));
-    background-size:cover;
+    background-size: cover;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     row-gap: 25px;
@@ -25,40 +26,47 @@
     border-radius: 50%;
     width: 250px;
     height: 250px;
-    
 }
 
+/* ---------- Títulos e parágrafos ---------- */
 p {
     width: 70%;
-    text-align:center;
+    text-align: center;
     font-size: 1rem;
     color: white;
 }
 
-h1, h2{    
+h1, h2 {
     width: 80vmin;
     background-position: center;
     text-transform: uppercase;
     font-weight: 900px;
     font-size: 2.5rem;
-    background:linear-gradient(to right, #001aff36, #0026ff, #0048fd3a);
+    background: linear-gradient(to right, #001aff36, #0026ff, #0048fd3a);
     background-size: 100%;
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color:transparent;
+    -webkit-text-fill-color: transparent;
 }
 
 button {
-    background-color:transparent;
+    background-color: transparent;
     text-transform: uppercase;
     border: solid #487bff;
     color: #487bff;
-    font-weight: bolder
+    font-weight: bolder;
     width: 300px;
     height: 50px;
     padding: 20px;
+    transition: all 0.3s ease; /* Adicionado para efeito ao passar o mouse */
 }
 
+button:hover {
+    background-color: #487bff; /* Alterando cor do botão ao passar o mouse */
+    color: white;
+}
+
+/* ---------- Conteúdo dos módulos ---------- */
 #course-content {
     display: flex;
     flex-direction: column;
@@ -68,7 +76,6 @@ button {
     height: 500px;
     background-color: rgba(0, 0, 0, 0.959);
     border: solid 0.2px #0026ff;
-    
 }
 
 .modules-list {
@@ -76,47 +83,47 @@ button {
     flex-direction: column;
     align-items: center;
     row-gap: 15px;
-    
 }
 
 span {
     color: #0026ff;
     text-transform: uppercase;
 }
-    
-    .module {
-        display: flex;
-        background: linear-gradient(rgba(17, 17, 17, 0.678), rgb(3, 3, 3,8));
-        color: white;
-        border: solid 1px #0026ff;
-        border-radius: 25px;
-        padding: 10px 50px;
+
+.module {
+    display: flex;
+    background: linear-gradient(rgba(17, 17, 17, 0.678), rgb(3, 3, 3,8));
+    color: white;
+    border: solid 1px #0026ff;
+    border-radius: 25px;
+    padding: 10px 50px;
 }
 
+/* ---------- Seção Transforme o Mundo ---------- */
 #transform-world {
     background-image: url(assets/imagens/woman-code.png);
     background-position: center;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 300px;
-    background-attachment:fixed;
+    background-attachment: fixed;
 }
+
 #transform-world p {
     font-size: 1.5rem;
-    color:white;
+    color: white;
     position: relative;
     max-width: 120px;
-    text-align:left;
+    text-align: left;
     height: auto;
     top: 100px;
-    left: 10%;
+    right: 30%;
     gap: 0px;
     text-shadow: 3px 3px #0026ff;
 }
 
-
-
-    #professional-challenges {
+/* ---------- Seção Desafios Profissionais ---------- */
+#professional-challenges {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -124,6 +131,7 @@ span {
     background-color: black;
     height: 700px;
 }
+
 footer {
     display: flex;
     flex-direction: column;
@@ -131,6 +139,70 @@ footer {
     background-color: rgb(11, 12, 22);
     height: 100px;
 }
+
 a {
     color: blue;
+}
+
+/* ---------- Responsividade para telas menores ---------- */
+
+/* Quando a largura da tela for menor que 600px (ex: tablets e smartphones) */
+
+@media (max-width: 600px) {
+
+    /* Ajustes no conteúdo do banner */
+    .banner-content {
+        padding: 20px; /* Adicionando mais padding para melhorar o espaçamento */
+    }
+
+    .logo {
+        width: 50%; /* Logo menor */
+        height: 50%; /* Logo menor */
+    }
+
+    h1 {
+        font-size: 2rem; /* Tamanho do título menor para telas pequenas */
+    }
+
+    button {
+        width: 100%; /* Botão ocupa toda a largura em telas menores */
+        padding: 15px; /* Reduzindo o padding do botão */
+    }
+
+    /* Ajustando o conteúdo de módulos */
+    #course-content {
+        height: auto; /* Permitindo que a altura seja automática */
+        padding: 20px; /* Adicionando padding para espaçamento */
+    }
+
+    .modules-list {
+        width: 100%; /* Ajustando a largura da lista de módulos */
+    }
+
+    .module {
+        padding: 10px 10px; /* Reduzindo o padding dos módulos */
+    }
+
+    /* Ajustando a seção "Transforme o Mundo" */
+    #transform-world {
+        height: 200px; /* Tornando a seção mais compacta */
+    }
+
+    #transform-world p {
+        font-size: 1.2rem; /* Tamanho da fonte menor para textos em telas pequenas */
+        top: 50px; /* Ajustando a posição do texto */
+        right: 30%; /* Ajustando o alinhamento do texto */
+    }
+
+    /* Ajustando a seção de Desafios Profissionais */
+    #professional-challenges {
+        height: auto; /* Permitindo altura automática */
+        padding: 20px; /* Adicionando padding para espaçamento */
+	right: 50%; /* Ajustando o alinhamento do texto */
+    }
+
+    footer {
+        height: auto;
+    }
+
 }
