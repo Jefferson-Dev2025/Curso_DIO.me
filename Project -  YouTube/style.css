@@ -1,0 +1,204 @@
+header {
+    display: flex;
+    width: 100vw;
+    height: 50px;
+    background-color: white;
+    justify-content:space-between;
+    margin: 0 auto;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo {
+    width: 150px;
+    height: 25px;
+    padding-left: 15px;
+}
+
+.right {
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.left {
+    display: flex;
+    margin-right: 50px;
+}
+
+header ion-icon {
+    font-size: 30px;
+    --ionicon-stroke-width: 30px;
+    cursor: pointer;
+}
+
+.search {
+    width: 300px;
+    border:1px solid #afafaf;
+    border-radius: 10px 0 0 10px;
+    font-size: 1rem;
+}
+
+.search2 {
+    width: 50px;
+    border: 1px solid #afafaf;
+    border-radius:0 10px 10px 0;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    font-weight: 500;
+    background-color: #afafaf60;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #afafaf8f;
+    transition: 0.3s;
+}
+
+.mic {
+    margin: 0 10px;
+    width: 20px;
+    height: 20px;
+    padding: 7px;
+    border-radius: 50%;
+}
+
+.bell {
+    margin:0 10px;
+    width: 20px;
+    height: 20px;
+    padding: 7px;
+    border-radius: 50%;
+}
+
+.criar {    
+    border: 1px solid #afafaf;
+    width: 90px;
+    border-radius: 15px;
+}
+
+.perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: white;
+    background-color: rgba(0, 128, 0, 0.61);
+    font-size: 1rem;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.perfil:hover {
+    box-shadow: 0px 0px 10px 3px #afafaf;
+    transition: 0.5s;
+}
+/*------ conteúdo principal ------- */
+.container {
+    width: 100%;
+    max-width: 1200px; /* Mantém um limite para telas grandes */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.sideBar-right {
+    margin-top: 50px;
+    width: 60vw;
+    height: 100vh;
+    padding: 24px 24px;
+}
+
+.sideBar-left {
+    margin-top: 60px;
+    margin-right: 25px;
+    width: 40vw;
+    height: 100%;
+}
+
+.sub {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 50px;
+    gap: 15px;
+}
+
+.bt-Inscreva-se {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 35px;
+    font-weight: 500;
+    margin-right: 10px;
+    border-radius: 15px;
+    color: white;
+    background-color: black;
+}
+
+.bt-Inscreva-se:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.bt-like {
+    justify-content: space-evenly;
+    width: 90px;
+    border-radius: 15px 0 0 15px;
+}
+
+.bt-deslike {
+    width: 90px;
+    border-radius:0 15px 15px 0;
+    border-left: solid 1px #afafaf50;
+}
+
+.bt-compatilha {
+    width: 110px;
+    margin-right: 5px;
+    border-radius: 15px;
+}
+
+.mais {
+    width: 20px;
+    height: 20px;
+    padding: 7px;
+    border-radius: 50%;
+}
+
+.cd {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 150px;
+}
+
+.coments {
+    width: 100%;
+}
+
+.img-coment {
+    width: 100%;
+}
+
+.list {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
