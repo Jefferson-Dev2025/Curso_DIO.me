@@ -8,6 +8,7 @@ header {
     align-items: center;
     position: fixed;
     z-index: 1;
+
 }
 
 .logo {
@@ -201,4 +202,26 @@ header ion-icon {
     margin: 0 auto;
     width: 100%;
     height: 100%;
+}
+
+/* apartir daqui é meu list */
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    background: orange;
+    gap: 15px;
+    margin: 0 auto;
+}
+
+.videos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 800px;
+}
+
+.video {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
 }

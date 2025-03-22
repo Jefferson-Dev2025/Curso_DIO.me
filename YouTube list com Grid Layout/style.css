@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+header {
+    position: absolute;
+    width: 400px;
+    height: 50px;
+    background: rebeccapurple;
+}
+.sideBar {
+    width: 100px;
+    height: 150px;
+    background: fuchsia;
+}
+.container {
+    position:absolute;
+    top: 0px;
+    width: 150px;
+    height: 150px;
+    background: teal;
+}
+.aside {
+    width: 100%;
+    height: 50px;
+    background: darkgoldenrod;
+}
